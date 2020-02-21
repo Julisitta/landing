@@ -1,0 +1,140 @@
+.wraper {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #313030;
+    height: 90px;
+
+}
+
+.naw {
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    text-transform: uppercase;
+    margin: 0 24.5%;
+}
+
+.naw li {
+    height: 90px;
+    line-height: 5em;
+    text-align: center;
+    width: 19%;
+}
+
+.naw li:hover {
+    background-color: #ff3f40;
+}
+
+.fa-gear, .fa-pencil,
+.fa-diamond, .fa-truck {
+    font-family: FontAwesome;
+    color: #ff808a;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;  
+
+}
+
+.text {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding: 100px 5%;
+    background-color: #f6f2f2;
+    
+}
+
+.text h1 {
+    font-size: 400%;
+    text-transform: uppercase;
+    padding-bottom: 36px;
+    font-weight: bold;
+}
+
+.text button {
+    border: none; 
+    margin-top: 56px;
+    background-color: #ff3f40;
+    height: 55px;
+    width: 255px;
+    border-radius: 5px;
+    box-shadow: none;
+    color: white;
+    font-weight: bold;
+}
+
+.service {
+    box-sizing: border-box;
+    padding: 100px 5%;
+}
+
+.service-wraper {
+    display: flex;
+}
+.services {
+    display: flex;
+    width: 45%;
+}
+
+.provider {
+    padding-right: 5%;
+}
+
+.provider h2 {
+    font-size: 250%;
+    width: 90%;
+    text-transform: uppercase;
+    padding-bottom: 36px;
+    font-weight: bold;
+}
+
+.provider button {
+    border-color: #ff3f40; 
+    margin-top: 56px;
+    background-color: #ffffff;
+    height: 55px;
+    width: 255px;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #ff3f40;
+    font-weight: bold;
+}
+
+.services {
+    width: 60%;
+}
+
+.services h3 {
+    font-size: 110%;
+    padding: 15%  0;
+    font-weight: bold;
+}
+
+.services li {
+    width: 50%;
+    height: 50%;
+    padding-bottom: 5%;
+}
+
+hr {
+    width: 88%;
+    background: #ececec;
+    height:2px;
+    border:none;
+}
+
+.products {
+    text-align: center;
+}
+
+.products h2 {
+
+}

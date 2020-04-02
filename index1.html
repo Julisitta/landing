@@ -6,90 +6,250 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="less.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/reset.css">
-    <link href="styles.less" type="text/css" rel="stylesheet/less"/>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 <body>
     <div class="wraper">
         <header>
-            <ul class="naw">
-                <li>home</li>
-                <li>portfolio</li>
-                <li>about us</li>
-                <li>contact</li>
+            <input type="checkbox" id="check-menu">
+            <label id="label" for="check-menu">MENU</label>
+            <div class="burger-line first"></div>
+            <div class="burger-line second"></div>
+            <div class="burger-line third"></div>
+            <div class="burger-line fourth"></div>
+            <ul class="nav">
+                <li><a href="#">home</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">contact</a></li>
             </ul>
         </header>
         <main>
             <div class="text">
-                <section>
-                        <h1>our strong  organaisation</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed d</p>
+                <section class="title">
+                        <h1>WE TURN CULTURAL VALUE INTO COMPANY VALUE</h1>
+                        <p>Independent branding & experience design 
+                            company working at the intersection of culture, design, and 
+                            technology. Since the beginning, our mission has been to do great work
+                              and to have a great time doing it. We believe our mission has guided us well.</p>
                         <button onclick="location.href = '#'">Contact Us</button>
                 </section>
                 <section class="video">
-                        <video width="533px" height="356px" controls="controls" src="video.mp4">       
+                        <video controls="controls" src="Thumbnail.mp4" preload="auto" autoplay="true" loop="true" muted="muted">       
                         </video>
                 </section>
             </div>
-            <div class="service">
+            
                 <div class="service-wraper">
                     <section class="provider">
-                            <h2>do you know we can  provide for you ?</h2>
-                            <p>Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, se</p>
+                            <h2>EASY TO UNDERSTAND. IMPOSSIBLE TO IGNORE.</h2>
+                            <p> We value our craft, have a deep passion for progression,
+                                    and exist to solve challenges for brands we believe in. </p>
                             <button onclick="location.href = '#'">Learn More</button>
                     </section>
                     <section class="services">
                         <ul class="part1">
                                 <li><i class="fa-gear fa-3x"></i>
-                                    <h3>Management</h3>
-                                    <p>Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, se</p>
+                                    <h3>Managing</h3>
+                                    <p>Customer Experience Consumer
+                                        Insights + Trends Omnichannel + D2C
+                                    </p>
                                 </li>
                                 <li><i class="fa-pencil fa-3x"></i>
-                                    <h3>UI /UX Design</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed d</p>
+                                    <h3>Design</h3>
+                                    <p>Design Systems + Style Guides  iOS + Android
+                                         Applications Prototyping + Optimization</p>
                                 </li>
                         </ul>
                         <ul class="part2">
                                 <li><i class="fa-diamond fa-3x"></i>
-                                    <h3>Logo / Branding</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed d</p>
+                                    <h3>Branding</h3>
+                                    <p>Identity + Positioning Visual Language
+                                         + Art Direction  Design Production </p>
                                 </li>
                                 <li><i class="fa-truck fa-3x"></i>
-                                    <h3>Logo / Branding</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed d</p>
+                                    <h3>TECHNOLOGY</h3>
+                                    <p>Technical Discovery Technical
+                                         Architecture  Full-Stack Development</p>
                                 </li>
                         </ul>
-                    </div>
                 </div>
                 </section>
-                <hr \>
+                <hr clsss="gray">
                 <div class="products">
                     <section>
-                        <h1>feature products</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do</p>
-                        <span class="line"></span>
+                        <h2>CAPABILITIES</h2>
+                        <p>While results are what matter most, we believe awards bring
+                             value and recognition to organizations as well as individuals.</p>
+                        
+                        <hr style="width: 10%; background: #ff3f40; margin-top:2%">
                     </section>
-                    <ul class="naw">
-                        <li>home</li>
-                        <li>portfolio</li>
-                        <li>about us</li>
-                        <li>contact</li>
-                    </ul>
+                    <div class="product">
+                        <input type="radio" name="tabs" id="all" checked>
+                        <label for="all">all</label>
+                        <input type="radio" name="tabs" id="print">
+                        <label for="print">print template</label>
+                        <input type="radio" name="tabs" id="web">
+                        <label for="web">web template</label>
+                        <input type="radio" name="tabs" id="user">
+                        <label for="user">user interface</label>
+                        <input type="radio" name="tabs" id="mock-up">
+                        <label for="mock-up">mock-up</label>
+                        <div class="tabs">
+                            <ul class="all-photo">
+                                <li><img src="img/1.jpg"></li>
+                                <li><img src="img/2.jpg"></li>
+                                <li><img src="img/3.jpg"></li>
+                                <li><img src="img/4.jpg"></li>
+                                <li><img src="img/95.jpg"></li>
+                                <li><img src="img/96.jpg"></li>
+                                <li><img src="img/97.jpg"></li>
+                                <li><img src="img/9.jpg"></li>
+                            </ul>
+                            <ul class="print-photo">
+                                <li><img src="img/8.jpg"></li>
+                                <li><img src="img/3.jpg"></li>
+                                <li><img src="img/1.jpg"></li>
+                                <li><img src="img/4.jpg"></li>
+                                <li><img src="img/5.jpg"></li>
+                                <li><img src="img/6.jpg"></li>
+                                <li><img src="img/7.jpg"></li>
+                                <li><img src="img/2.jpg"></li>
+                            </ul>
+                            <ul class="web-photo">
+                                <li><img src="img/91.jpg"></li>
+                                <li><img src="img/92.jpg"></li>
+                                <li><img src="img/93.jpg"></li>
+                                <li><img src="img/94.jpg"></li>
+                                <li><img src="img/95.jpg"></li>
+                                <li><img src="img/96.jpg"></li>
+                                <li><img src="img/97.jpg"></li>
+                                <li><img src="img/9.jpg"></li>
+                            </ul>
+                            <ul class="user">
+                                    <li><img src="img/9.jpg"></li>
+                                    <li><img src="img/94.jpg"></li>
+                                    <li><img src="img/92.jpg"></li>
+                                    <li><img src="img/93.jpg"></li>
+                                    <li><img src="img/97.jpg"></li>
+                                    <li><img src="img/96.jpg"></li>
+                                    <li><img src="img/95.jpg"></li>
+                                    <li><img src="img/9.jpg"></li>
+                            </ul>
+                            <ul class="mock">
+                                    <li><img src="img/97.jpg"></li>
+                                    <li><img src="img/96.jpg"></li>
+                                    <li><img src="img/9.jpg"></li>
+                                    <li><img src="img/94.jpg"></li>
+                                    <li><img src="img/95.jpg"></li>
+                                    <li><img src="img/96.jpg"></li>
+                                    <li><img src="img/93.jpg"></li>
+                                    <li><img src="img/92.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="ourteam">
+                    <section class="team">
+                        <h2>Meet our team</h2>
+                        <p>We’re 100+ individuals from across the world driven by bold ideas and diverse perspectives. 
+                            Craft, service, and efficiency drive us forward and we see our agency as a place for our shared values to collide</p>
+                    </section>
+                    <hr style="width: 10%; background: #ff3f40; margin-left: 0%">
+                    <div class="employees">
+                        <div class="description-photo">
+                            <div class="description">  
+                                <div class="tab-b" style="display:block; display:flex">
+                                    <img src="img/1eb.jpg">
+                                    <div style="display:block">
+                                        <h3>ASHLEY REICHEL</h3> 
+                                        <p>Ashley oversees business operations, where she promotes our agency’s organizational 
+                                            health across offices and departments. </p>                        
+                                    </div>
+                                </div>
+                                <div class="tab-b">
+                                    <img src="img/2eb.jpg">
+                                    <div style="display:block">
+                                        <h3>MATT FAULK</h3> 
+                                        <p>Matt oversees the vision of the agency and provides high-level direction across key clients. Starting out as an ambitious designer and brand builder.</p>                         
+                                
+                                    </div>
+                                </div>
+                                <div class="tab-b">
+                                    <img src="img/3eb.jpg">
+                                    <div style="display:block">
+                                        <h3>ALISA KUNO</h3> 
+                                        <p>Her responsibilities include financial planning, advising on investment decisions, and analyzing
+                                             current and historical financials. </p>                         
+                                
+                                    </div>
+                                </div>    
+                                <div class="tab-b">
+                                    <img src="img/4eb.jpg">
+                                    <div style="display:block">
+                                        <h3>RYAN PARKHURST</h3> 
+                                        <p>This means bringing together diverse capabilities across business consulting, data science,
+                                             customer experience. </p>                         
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="little-photo">
+                                <li><span class="full-name">ASHLEY REICHEL</span><img src="img/1e.jpg" class="tab-h" data-tab="0"></li>
+                                <li><span class="full-name">MATT FAULK</span><img src="img/2e.jpg" class="tab-h" data-tab="1"></li>
+                                <li><span class="full-name">ALISA KUNO</span><img src="img/3e.jpg" class="tab-h" data-tab="2"></li>
+                                <li><span class="full-name">RYAN PARKHURST</span><img src="img/4e.jpg" class="tab-h" data-tab="3"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribe">
+                        <div class="form">
+                            <h2>Design tips, tricks, and freebies. Delivered weekly.</h2> 
+                            <p>STAY IN THE KNOW</p>                         
+                            <input type="text" name="email" placeholder="Email address" class="email">
+                            <input type="submit" value="Subscribe" class="submit">
+                        </div>
+                </div>
+                <div class="get-in">
+                        <h2>get in touch</h2> 
+                        <p>We collaborate with ambitious brands and people. Let’s connect :)</p>     
+                        <hr style="width: 10%; background: #ff3f40; margin-left: 0%"> 
+                        <div class="email-conact">
+                            <div class= "email-name">
+
+                                <input type="text" name="email" placeholder="Email address" class="mail">
+                                <input type="text" name="name" placeholder="Name" class="name">
+
+                                <input type="text" name="email" placeholder="Type your message" class="message">
+                                <input type="submit" value="Send message" class="send">
+
+                            </div>
+                            <div class="contact-info">
+                                    <div class="contacts">
+                                    <h4>contact info</h4> 
+                                    <p>Jalalabad 24 / A, Ambaarkhana, Sylhet,  </p>
+                                    <p>Bangladesh</p>
+                                    <p>redwan@deviserweb.com</p>
+                                    <p>(+88) 017 617 46373</p>
+                                </div>    
+                            </div>   
+                </div>
+            
         </main>
         <footer>
             <p>© Copyright @Junaed 2016, All rights reserved.</p>
-            <ul class="cocial">
-                <li>home</li>
-                <li>portfolio</li>
-                <li>about us</li>
-                <li>contact</li>
-            </ul>
+                    <ul class="cocial">
+                        <li><a href="#"><i class="fa-facebook-official fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa-linkedin-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa-google-plus-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa-twitter-square fa-2x"></i></a></li>
+                    </ul>           
         </footer>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>

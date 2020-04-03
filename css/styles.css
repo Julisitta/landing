@@ -128,7 +128,6 @@ h2 {
 }
 
 .provider button {
-    
     border: 2px solid #ff3f40; 
     margin-top: 10%;
     background-color: #ffffff;
@@ -241,7 +240,7 @@ hr {
     width: 70%;
     justify-content: space-between;
     position: absolute;
-    top: 58%;
+    top: 64%;
     left: 35%;
 }
 
@@ -684,5 +683,11 @@ footer {
     }
     .cocial {
         padding-left: 5%;
+    }
+    .provider button, .text button {
+        transform: translateX(0);
+    }
+    .services {
+        transform: translateX(0);
     }
 }

@@ -7,8 +7,9 @@
     width: 100%;
     margin: 0 auto;
     font-size: 100%;
-    font-family:'Open Sans';
+    font-family:'Open Sans', Arial, Helvetica;
     line-height: 30px;
+    overflow: hidden;
 }
 
 header {
@@ -47,7 +48,7 @@ a {
 
 .fa-gear, .fa-pencil,
 .fa-diamond, .fa-truck {
-    font-family: FontAwesome;
+    font-family: 'FontAwesome';
     color: #ff808a;
 }
 
@@ -76,7 +77,7 @@ main {
     line-height: 70px;
     text-transform: uppercase;
     padding-bottom: 5%;
-    font-family: 'Open Sans bold';
+    font-family: 'Open Sans bold', Arial, Helvetica;
 }
 
 .title p {
@@ -124,7 +125,7 @@ h2 {
     font-size: 250%;
     text-transform: uppercase;
     padding-bottom: 5%;
-    font-family: 'Open Sans bold';
+    font-family: 'Open Sans bold', Arial bold, Helvetica bold;
 }
 
 .provider button {
@@ -136,7 +137,7 @@ h2 {
     border-radius: 5px;
     box-shadow: none;
     color: #ff3f40;
-    font-family: 'Open Sans bold';
+    font-family: 'Open Sans bold', Arial bold, Helvetica bold;
 }
 
 .services {
@@ -146,7 +147,7 @@ h2 {
 h3 {
     font-size: 110%;
     padding: 15%  0;
-    font-family: 'Open Sans bold';
+    font-family: 'Open Sans bold', Arial bold, Helvetica bold;
     text-transform: uppercase;
 }
 
@@ -156,7 +157,14 @@ h3 {
     padding-bottom: 5%;
 }
 
+
 hr {
+    width: 10%; 
+    background: #ff3f40; 
+    margin-top: 2%
+}
+
+hr:first-of-type {
     width: 88%;
     background: #ececec;
     height:2px;
@@ -176,7 +184,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-family: 'Open Sans bold';
+    font-family: 'Open Sans bold', Arial bold, Helvetica bold;
     text-transform: uppercase;
     margin: 3% 24.5%;
     font-size: 100%;
@@ -218,6 +226,15 @@ hr {
     padding-bottom: 5%;
 }
 
+
+#first-tab {
+    display: flex;
+}
+
+.tab-b div {
+    display: block;
+}
+
 .ourteam {
     padding-left: 5%;
 }
@@ -231,7 +248,7 @@ hr {
     padding-bottom: 3%;
 }
 
-.description div {
+.tab-b {
     display: none;
 }
 
@@ -308,13 +325,13 @@ hr {
     border-radius: 5px;
     box-shadow: none;
     color: white;
-    font-family: 'Open Sans bold';
+    font-family: 'Open Sans bold', Arial bold, Helvetica bold;
 }
 
 .email {
     border: none; 
     height: 55px;
-    width: 520px;
+    width: 80%;
     padding-left: 5%;
     border-radius: 5px;
     box-shadow: none;
@@ -367,31 +384,27 @@ hr {
     border-radius: 5px;
     box-shadow: none;
     color: white;
-    font-family: 'Open Sans bold';
+    font-family: 'Open Sans bold', Arial bold, Helvetica bold;
 }
 
 .contact-info {
     width: 38%;
-    height: 477px;
     background-color: #313030;
     color: white;
-    margin-top: 3%;
-    margin-left: 2%;
+    margin: 3% 0 3.5% 2%;
 }
 .contacts {
-    padding-top: 25%;
-    padding-left: 25%;
+    padding: 25% 0 0 25%;
     line-height: 30px;
 }
 
 .contacts h4 {
     font-size: 100%;
-    font-family: 'Open Sans bold';
+    font-family: 'Open Sans bold', Arial bold, Helvetica bold;
     text-transform: uppercase;
 }
 
 footer {
-    height: 108px;
     background-color: #313030;
     color: white;
     display: flex;
@@ -402,18 +415,17 @@ footer {
 
 .cocial { 
     display: flex;
-    width: 200px;
+    width: 50%;
     justify-content: space-between;
     padding-left: 50%;
 }
 
 .fa-facebook-official, .fa-linkedin-square,
 .fa-google-plus-square, .fa-twitter-square, .fa-behance-square {
-    font-family: FontAwesome;
+    font-family: 'FontAwesome';
     color: #ffffff;
     padding-right: 15px;
 }
-
 
 @media screen and (max-width: 1024px) {
     .wraper {
@@ -436,7 +448,6 @@ footer {
     }
     .subscribe{
         height: 335px;
-        background-size: 50%;
         background-size: cover;
     }
     .cocial { 
@@ -500,8 +511,7 @@ footer {
 @media (max-width: 640px) {
     .wraper {
         width: 480px;
-        width: 100%;
-        padding: 0 20px;
+        padding: 0 2%;
         font-size: 80%;
     }
     .text {
@@ -514,6 +524,9 @@ footer {
     }
     .title h1 {
         line-height: 40px;
+    }
+    .ourteam {
+        padding-left: 0;
     }
     .all-photo li {
         margin-left: 20%;
@@ -531,11 +544,30 @@ footer {
     }
     .services {
         padding-top: 10%;
-        transform: translateX(25%);
-        width: 100%;
+
     }
-    .provider button {
-        transform: translateX(50%);
+    .get-in {
+        padding-left: 0;
+    }
+    .email-conact {
+        display: block;
+    }
+    .email-name, .contact-info, .email-name input {
+        width: 100%;
+    }  
+    .contact-info {
+        height: 70%;
+        margin: 3% 0 3.5% 0;
+        padding-bottom: 5%;
+    }
+    footer {
+        display: block;
+        line-height: 54px;
+        text-align: left;
+    }
+    .cocial { 
+        width: 80%;
+        padding-right: 0;
     }
 }
 
@@ -662,18 +694,6 @@ footer {
     }
     .form h2 {
         padding-bottom: 14px;
-    }
-    .email-conact {
-        display: block;
-    }
-    .email-name, .contact-info {
-        width: 100%;
-    }
-    .email-name input {
-        width: 100%;
-    }
-    .contact-info {
-        height: 50%;
     }
     footer {
         padding: 0;
